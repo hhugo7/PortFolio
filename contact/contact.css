@@ -1,0 +1,163 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*********************************************/
+/*******Nav-Bar*******/
+
+.nav{
+  height: 550px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.785), 
+    rgba(0, 0, 0, 0.45)
+    ),url(contact-us.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.title{
+  margin: 0px;
+  font-size: 70px;
+  font-family: 'Monomaniac One', sans-serif;
+  color: #ffffff;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.desc{
+
+  font-size: 20px;
+  font-family: 'Monomaniac One', sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navigation{
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li{
+  margin: 10px;
+  margin-inline: 20px;
+}
+
+li a {
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 15px;
+    display: block;
+    color: rgb(190, 190, 190);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bachelor{
+  color:#ef7171;
+}
+
+.bts{
+  color:#71ef8a;
+}
+
+li a:hover {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+
+
+/*********************************************/
+.demo{
+  font-family: 'Monomaniac One', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+}
+
+.form{
+  margin: 3% 20% 7% 20%;
+  font-family:'Montserrat',sans-serif;
+}
+
+h2{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#78788c;
+  border-bottom:3px solid #78788c
+}
+
+input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2
+}
+
+input:focus{
+  border-bottom:2px solid #78788c
+}
+
+.piece:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+
+button{
+  float:right;
+  padding:8px 12px;
+  margin:2% 0 2%;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  border-radius: 10px;
+  color:#5a5a6e;
+}
+
+button:hover{
+  background:#78788c;
+  color:#fff
+}
+
+/*********************************************FOOTER**************************************/
+.links{
+  padding-top: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.links a{
+  margin: 7px;
+}
+
+.copyright{
+  margin-top: 10px;
+  color: rgb(190, 190, 190);
+  font-family: 'Monomaniac One', sans-serif;
+  text-align: center;
+}
+
+hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+.footer{
+  margin-bottom: 2%;
+}

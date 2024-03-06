@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page de chargement</title>
+</head>
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .loader-wrapper {
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    perspective: 800px;
+  }
+
+  .loader {
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+
+</style>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    // Sélectionner l'élément du loader
+    const loaderElement = document.querySelector('.loader');
+
+    // Paramètres pour la scène, la caméra et le rendu
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, loaderElement.clientWidth / loaderElement.clientHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(loaderElement.clientWidth, loaderElement.clientHeight);
+    loaderElement.appendChild(renderer.domElement);
+
+    // Création d'une forme géométrique (par exemple, un cube)
+    const geometry = new THREE.BoxGeometry(2, 2, 2); /* Increased size */
+    const material = new THREE.MeshPhongMaterial({ color: 0xff0000 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    // Ajouter une lumière ambiante
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    // Ajouter une lumière directionnelle
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
+
+    // Positionnement de la caméra
+    camera.position.z = 5;
+
+    // Animation de rotation
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Rotation de l'objet 3D
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      renderer.render(scene, camera);
+    }
+
+    // Lancer l'animation
+    animate();
+  </script>
+</body>
+</html>
