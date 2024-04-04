@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Bienvenue sur les Certifications     '; 
+var txt = 'Bienvenue sur la veille technologique     '; 
 var speed = 150;
 
 function typeWriter() {
