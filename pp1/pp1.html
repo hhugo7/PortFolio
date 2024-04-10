@@ -269,7 +269,7 @@
         <p>
           Création de page d'authentification et de retour de commande en PHP
         </p>
-        <a href="#" class="read-more">
+        <a cible="popup:fenetre001" class="read-more" >
           Read more <span class="sr-only">about this is some title</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -288,18 +288,27 @@
         <h2>Projet Commande de sandwich</h2>
         <p>
           Création d'un projet de commande de sandwich en python
-        </p>
-        <a href="#" class="read-more">
+        </p>  
+        <a id="btnPopup" class="read-more" >
           Read more <span class="sr-only">about this is some title</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
+        </a>
         </a>
       </div>
     </div>
   </article>
 </section>
 
+<div id="overlay" class="overlay">
+  <div id="popup" class="popup">
+    <h2>Projet HTML / CSS<span id="btnClose" class="btnClose">&times;</span></h2> 
+    
+    <p>Sujet: Le But du projet était que l'on nous donne une maquette d'un site vitrine et que l'on reproduise cette maquette en code HTML/CSS</p>
+    
+  </div>
+</div>
 
 <hr>
 
@@ -314,6 +323,6 @@
   </div>
 </footer>
 <script src="pp1.js"></script>
-<script src="carousel.js"></script>
+<script src="popUp.js"></script>
 </body>
 </html>
