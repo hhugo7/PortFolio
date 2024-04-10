@@ -155,7 +155,7 @@
   color: #28666e;
   font-weight: bolder;
   font-size: 1.2rem;
-}
+} 
 
 article {
   margin: 1%;
@@ -217,7 +217,7 @@ article a:focus {
   outline: 1px dotted #28666e;
 }
 
-article a .icon {
+.icon {
   min-width: 24px;
   width: 24px;
   height: 24px;

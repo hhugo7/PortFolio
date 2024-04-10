@@ -14,7 +14,7 @@
         ),url(/img/competence.jpg);
         background-size:cover;
         background-repeat:no-repeat;
-      background-size: 100%;
+      background-size: cover;
       margin-bottom: 5%;
     }
     
@@ -112,102 +112,58 @@
   
   /********************************************/
   
-h1{
-  text-align: center;
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
+
+
+.main-project{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-  .brand{
-    font-family: 'Monomaniac One', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    margin: 2% 0 2% 0;
-    padding: 4%;
-    height: fit-content;
+  .projet{
+    margin: 2%;
+    border-radius: 25px;
+    width: 70%;
+    padding: 2%;
+    background-color: #d0cece74;
+    display: inline-flex;
   }
 
-  .competence-languages{
-    background-color: #ef7171;
-    margin-top: 5%;
-    font-family: 'Monomaniac One', sans-serif;
-    font-size: 30px;
-    height: 172px;
-    width: 70%;
-    margin: 0 auto;
+  .projet img{
+    width: 30%;
     border-radius: 25px;
   }
 
-  .competence-languages h1{
-    padding: 0px;
-    font-size: 35px;
-    color: #fff;
-    text-align: center;
-    padding-top: 2%;
+  .projet-p{
+    margin-left: 3%;
   }
 
-.brand i:hover{
-    color: #71ef8a;
+  .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
   }
 
-.brand i{
-  margin: 1%;
+  .projet-p a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3c994f;
+  }
+
+  .projet-p h1{
+  font-size: 30px;
+  font-family: "Suwannaphum", serif;
   margin-bottom: 1%;
 }
 
-.competence-languages:hover{
-  box-shadow: 0 0 10px 0 #343434;
-  translate: 0.3s;
-  }
-
-
-  .competences{
-    background-color: #ef7171;
-    border-radius: 25px;
-    width: 80%;
-    height: 484px;
-    padding: 1%;
-    margin: 0 auto;
-    margin-top: 2%;
-  }
-
-  .comp{
-    padding: 1%;
-    border-radius: 10px;
-    display: inline-block;
-  }
-
-  .comp1{
-    text-align: center;
-    color: #fff;
-    padding: 3%;
-    background-color: #494848bb;
-    border-radius: 10px;
-    width: 31%;
-    height: 200px;
-    display: inline-flex;
-    margin: 1%;
-    font-size: 25px;
-    font-family: 'Monomaniac One', sans-serif;
-  }
-
-  .com1 p{
-    margin-top: 2%;
-  }
-
-  .comp1:hover{
-    box-shadow: 0 0 10px 0 #343434;
-    translate: 0.3s;
-    background-color: #71ef8a;
-    color: #343434;
-  }
-
-  .h1-comp{
-    margin-top: 4%;
-  }
-  
+.projet-p p{
+  font-size: 20px;
+}
   /******************************FOOTER**********************************************/
   
   /******************************FOOTER**********************************************/
