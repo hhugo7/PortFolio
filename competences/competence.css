@@ -130,7 +130,7 @@ h1{
   }
 
   .competence-languages{
-    background-color: #ef7171;
+    background-color: #6c769d;
     margin-top: 5%;
     font-family: 'Monomaniac One', sans-serif;
     font-size: 30px;
@@ -138,6 +138,8 @@ h1{
     width: 70%;
     margin: 0 auto;
     border-radius: 25px;
+    
+    transition: box-shadow 0.3s ease;
   }
 
   .competence-languages h1{
@@ -148,29 +150,34 @@ h1{
     padding-top: 2%;
   }
 
+  .brand i{
+    margin: 1%;
+    margin-bottom: 1%;
+    transition: background-color 2s ease;
+  }
+
 .brand i:hover{
     color: #71ef8a;
   }
 
-.brand i{
-  margin: 1%;
-  margin-bottom: 1%;
-}
-
 .competence-languages:hover{
   box-shadow: 0 0 10px 0 #343434;
-  translate: 0.3s;
   }
 
 
   .competences{
-    background-color: #ef7171;
+    background-color: #6c769d;
     border-radius: 25px;
     width: 80%;
     height: 484px;
     padding: 1%;
     margin: 0 auto;
     margin-top: 2%;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .competences:hover{
+    box-shadow: 0 0 10px 0 #343434;
   }
 
   .comp{
@@ -191,6 +198,8 @@ h1{
     margin: 1%;
     font-size: 25px;
     font-family: 'Monomaniac One', sans-serif;
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.8s ease ;
   }
 
   .com1 p{
